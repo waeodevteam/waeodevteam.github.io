@@ -115,7 +115,6 @@ padding: 10px; padding-right: 20px; padding-left: 30px;}
 
 .content_parent {
     position: relative;
-    width: 450px;
     height: 120px;
     margin-left: 10px;
 }
@@ -126,13 +125,13 @@ padding: 10px; padding-right: 20px; padding-left: 30px;}
 
 .child_left {
     left:0;
-    width: 72px;
+    width: 20%;
 }
 
 .child_right {
     right:0px;
     top:18px;
-    width: 360px;
+    width: 80%;
     font-size: 24px;
     font-family: "Roboto Light"
 }
