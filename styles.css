@@ -4,7 +4,7 @@
 #left {width: 32%; font-size: 15px;
 padding: 10px; padding-right: 20px; padding-left: 30px;}
 #middle {width: 28%;}
-#right {width: 36%;margin-top: 60px;}
+#right {width: 34%;margin-top: 60px;}
 
 .waeo_header {
     text-align: center;
@@ -117,6 +117,7 @@ padding: 10px; padding-right: 20px; padding-left: 30px;}
     position: relative;
     height: 120px;
     margin-left: 10px;
+    width: auto;
 }
 
 .child {
