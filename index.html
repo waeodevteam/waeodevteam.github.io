@@ -2,6 +2,7 @@
 <html>
 <head>
 <LINK href="styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <title>Waeo</title>
 </head>
 <body>
@@ -19,7 +20,7 @@ With Waeo, you can build playlists that integrate music from disparate local &#3
 Jazz up your soirees with Waeo&#39;s social spin - allow your friends to add songs of their own and vote on the playlist to make things interesting!
 <br/><br/>
 
-        <div id="submit"> Coming Soon! </div>
+        <div id="submit"><input type="email" id="txtEmail" placeholder="Email" />&nbsp;<button id="cmdSubscribe">Subscribe</button></div>
         <!-- <form action="">
             <input type="submit" name="submit" id="submit" value=" Coming Soon! ">
         </form> -->
@@ -61,3 +62,16 @@ Jazz up your soirees with Waeo&#39;s social spin - allow your friends to add son
     </div>
 </div>
 </body>
+<script type="text/javascript">
+    (function() {
+        $('#cmdSubscribe').click(function(){
+            $.ajax({
+                url:'https://api.waeoapp.com/core/subscribe/' + $('#txtEmail').val() + "/",
+            }).done(function(response){
+                console.log(response);
+                $('#txtEmail').val('');
+            });
+        });
+    })();
+</script>
+</html>

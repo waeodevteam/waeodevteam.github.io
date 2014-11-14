@@ -139,13 +139,12 @@ padding: 10px; padding-right: 20px; padding-left: 30px;}
 }
 
 #submit {
-    background-color: #1d3d51;
+    /*background-color: #1d3d51;*/
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     padding: 10px;
     color: #fff;
-    margin-top: 30px;
-    
+    margin-top: 20px;
     font-family: 'Roboto Black';
     font-size: 20px;
     text-decoration: none;
@@ -155,6 +154,24 @@ padding: 10px; padding-right: 20px; padding-left: 30px;}
 
 }
 
+#txtEmail{
+    padding: 9px;
+    border: none;
+    width:200px;
+    border-bottom: solid 2px #a9a9a9;
+    transition: border 0.3s;
+}
+
+#cmdSubscribe{
+    background: #1d3d51;
+    color:white;
+    border:none;
+    padding: 9px;
+    width:100px;
+    margin-left: 10px;
+    border-radius: 2px;
+
+}
 
 
 /*#submit:hover {
