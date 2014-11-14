@@ -144,9 +144,9 @@ padding: 10px; padding-right: 20px; padding-left: 30px;}
     -webkit-border-radius: 5px;
     padding: 10px;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: 'Roboto Black';
-    font-size: 20px;
+    font-size: 10px;
     text-decoration: none;
     cursor: poiner;
      border:none;
@@ -155,9 +155,9 @@ padding: 10px; padding-right: 20px; padding-left: 30px;}
 }
 
 #txtEmail{
-    padding: 9px;
+    padding: 13px;
     border: none;
-    width:200px;
+    width:220px;
     border-bottom: solid 2px #a9a9a9;
     transition: border 0.3s;
 }
@@ -166,11 +166,11 @@ padding: 10px; padding-right: 20px; padding-left: 30px;}
     background: #1d3d51;
     color:white;
     border:none;
-    padding: 9px;
+    padding: 13px;
     width:100px;
     margin-left: 10px;
     border-radius: 2px;
-
+    cursor: pointer;
 }
 
 
