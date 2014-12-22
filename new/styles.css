@@ -1,0 +1,47 @@
+* {margin: 0; padding: 0;}
+#container {
+    height: 1000px;
+    width:100%;
+    font-size:0;
+    padding-top: 10px;
+    background-image: url('images/wall.jpg')
+}
+
+@font-face {
+    font-family: "Meta Bold";
+    src:url("Meta-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src:url("Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin";
+    src:url("Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Black";
+    src:url("Roboto-Black.ttf");
+}
+
+#txtEmail{
+    padding: 13px;
+    border: none;
+    width:220px;
+    border-bottom: solid 2px #a9a9a9;
+    transition: border 0.3s;
+}
+
+#cmdSubscribe{
+    background: #1d3d51;
+    color:white;
+    border:none;
+    padding: 13px;
+    width:100px;
+    margin-left: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}

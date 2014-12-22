@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta property="og:url" content="http://getwaeo.com" />
+    <meta property="og:type" content="waeo:landing_page" />
+    <meta property="og:title" content="Waeo" />
+    <meta property="og:image" content="http://getwaeo.com/images/logo.jpg" />
+    <meta property="og:description" content="Playlists for the connected generation." />
+    <meta charset="UTF-8">
+    <meta name="detectify-verification" content="2fd94bd2793cd67ad7525c5c8a5d76bd" />
+    <meta name="keywords" content="waeo, playlist, music, youtube, soundcloud, spotify" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <title>Waeo</title>
+</head>
+<body>
+    <!-- <div class="waeo_header">Waeo</div> -->
+    <div id="container">
+        <div id="header-title">waeo</div>
+        <div id="center-panel">
+            <p class="bold-text">Playlists for the connected generation.</p>
+            <p class="bold-text" style="margin-top:10px;">Music is everywhere. You shouldn't be</p>
+            <div id="submit">
+                <input type="email" id="txtEmail" placeholder="Email" />&nbsp;<button id="cmdSubscribe">Get Early Access</button>
+            </div>
+            <p id="thanks">Thanks! We'll get you aboard once we are ready.</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    (function() {
+        $('#cmdSubscribe').click(function(){
+            $.ajax({
+                url:'https://api.waeoapp.com/core/subscribe/' + $('#txtEmail').val() + "/",
+            }).done(function(response){
+                console.log(response);
+                $('#txtEmail').val('');
+                $('#thanks').fadeIn(1000, function(){
+                    window.setTimeout(function(){
+                        $('#thanks').fadeOut(1000);
+                    }, 3000);
+                });
+            });
+        });
+    })();
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57910741-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</html>
