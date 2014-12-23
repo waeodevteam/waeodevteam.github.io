@@ -11,14 +11,14 @@ html, body{
     width:100%;
     font-size:0;
     padding-top: 10px;
-    background-image: url('../images/wall.jpg');
+    background-image: url('../images/head1.jpg');
     background-attachment: fixed;
-    background-position: center;
+
 }
 
 @font-face {
-    font-family: "Droid Sans";
-    src:url("../fonts/Droid-Sans.ttf");
+    font-family: "Helvetica Neue";
+    src:url("../fonts/Helvetica-Neue.ttf");
 }
 
 
@@ -28,8 +28,8 @@ html, body{
 }
 
 @font-face {
-    font-family: "Roboto Light";
-    src:url("../fonts/Roboto-Light.ttf");
+    font-family: "Lato Regular";
+    src:url("../fonts/Lato-Regular.ttf");
 }
 
 #header-title{
@@ -41,10 +41,28 @@ html, body{
 }
 
 .bold-text{
-    font-family: Meta Bold;
+    font-family: Helvetica Neue;
     font-size: 40px;
     color:white;
-    font-weight: bold;
+    font-stretch: normal;
+    font-style:normal;
+    font-variant: normal;
+    font-weight:900;
+    line-height: 49.5px;
+    text-shadow: rgb(0, 0, 0) 1px 1px 5px;
+    text-transform: capitalize;
+}
+
+
+.thin-text{
+    font-family: Lato Regular;
+    font-size: 33px;
+    color:white;
+    font-stretch: normal;
+    font-style:normal;
+    font-variant: normal;
+    line-height: 33.75px;
+    text-shadow: rgb(0, 0, 0) 1px 1px 5px;
 }
 
 #center-panel{
