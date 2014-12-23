@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<LINK href="styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<title>Waeo</title>
+</head>
+<body>
+    <div class="waeo_header">Waeo</div>
+<div id="container">
+    <div id="left">
+        <div class="what_is_waeo_header"> What is Waeo? </div><br/>
+        <div class="what_is_waeo_text">
+        Waeo is an innovative playlist synthesizing interface for the connected generation. 
+        <br/><br/>
+When you can access your favorite music individually on various personal devices and online resources - why should your current playlist be based on a single repository? 
+<br/><br/>
+With Waeo, you can build playlists that integrate music from disparate local &#38; online sources, thereby making for an unshackled listening experience. Host a playlist on your wi-fi, connect from any device of your choice and build as you go! 
+<br/><br/>
+Jazz up your soirees with Waeo&#39;s social spin - allow your friends to add songs of their own and vote on the playlist to make things interesting!
+<br/><br/>
+
+        <div id="submit"><input type="email" id="txtEmail" placeholder="Email" />&nbsp;<button id="cmdSubscribe">Subscribe</button></div>
+        <!-- <form action="">
+            <input type="submit" name="submit" id="submit" value=" Coming Soon! ">
+        </form> -->
+
+        </div>
+
+
+    </div>
+    <div id="middle" align="center">
+    <img src="playlist.png" />
+    </div>
+    <div id="right">
+        <div class="content_parent" >
+            <div class="child child_left">
+                <div class ="newclass_collab"><img src="shadow.png"/></div>
+            </div>
+            <div class="child child_right"> Collaborative Playlist Building </div>
+        </div>
+        <div class="content_parent">
+            <div class="child child_left">
+                <div class ="newclass_wifi"><img src="shadow.png"/></div>
+            </div>
+            <div class="child child_right"> Wifi Basis </div>
+        </div>
+        <div class="content_parent">
+            <div class="child child_left">
+                <div class ="newclass_youtube"><img src="shadow.png"/></div>
+            </div>
+            <div class="child child_right"> YouTube Support </div>
+        </div>
+        <div class="content_parent">
+            <div class="child child_left">
+                <div class ="newclass_soundcloud"><img src="shadow.png"/></div>
+            </div>
+            <div class="child child_right"> SoundCloud Support </div>
+        </div>
+</div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    (function() {
+        $('#cmdSubscribe').click(function(){
+            $.ajax({
+                url:'https://api.waeoapp.com/core/subscribe/' + $('#txtEmail').val() + "/",
+            }).done(function(response){
+                console.log(response);
+                $('#txtEmail').val('');
+            });
+        });
+    })();
+</script>
+</html>

@@ -11,8 +11,16 @@ html, body{
     width:100%;
     font-size:0;
     padding-top: 10px;
-    background-image: url('../images/rust.jpg')
+    background-image: url('../images/wall.jpg');
+    background-attachment: fixed;
+    background-position: center;
 }
+
+@font-face {
+    font-family: "Droid Sans";
+    src:url("../fonts/Droid-Sans.ttf");
+}
+
 
 @font-face {
     font-family: "Meta Bold";
