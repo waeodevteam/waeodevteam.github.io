@@ -106,7 +106,7 @@ html, body{
     text-align: center;
     margin:0 auto;
     padding 10px;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 #submit{
@@ -140,6 +140,15 @@ html, body{
     font-size: 20px;
     color:white;
     display: none;
-    text-shadow: rgb(0, 0, 0) 1px 1px 3px;
+    /*text-shadow: rgb(0, 0, 0) 1px 1px 3px;*/
     font-weight: bold;
+}
+
+#cmdShare{
+    color:  #425F9C;
+    cursor: pointer;
+}
+
+#cmdTweet{
+    /*color: #0082B2;*/
 }

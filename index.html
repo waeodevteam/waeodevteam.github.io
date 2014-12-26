@@ -20,6 +20,23 @@
     <title>Waeo</title>
 </head>
 <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '329299743943512',
+          xfbml      : true,
+          version    : 'v2.2'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- <div class="waeo_header">Waeo</div> -->
     <div id="container">
         <div id="header-title"><img src="images/logo-full.png" style="width:250px;"/></div>
@@ -30,7 +47,7 @@
             <div id="submit">
                 <input type="email" id="txtEmail" placeholder="Email" />&nbsp;<button id="cmdSubscribe">Get Early Access</button>
             </div>
-            <p id="thanks">Thanks! We'll get you aboard once we are ready.</p>
+            <p id="thanks">Thanks! We'll get you aboard once we are ready.<br/>Meanwhile you can help us by <span id="cmdShare">sharing</span> it on facebook or <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getwaeo.com" data-text="Playlists for the connected generation." data-via="WaeoHQ" data-hashtags="music">Tweet</a> about it.</p>
         </div>
     </div>
 </body>
@@ -42,12 +59,19 @@
                 url:'https://api.waeoapp.com/core/subscribe/' + $('#txtEmail').val() + "/",
             }).done(function(response){
                 console.log(response);
+                if(response == 'You are already there!')
+                    $('#thanks').html(response + "<br/>Maybe you can help us by <span id=\"cmdShare\">sharing</span> it on facebook or <a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-url=\"http://getwaeo.com\" data-text=\"Playlists for the connected generation.\" data-via=\"WaeoHQ\" data-hashtags=\"music\">Tweet</a> about it.</p> about it.");
                 $('#txtEmail').val('').prop('disabled', true);
                 $('#cmdSubscribe').html('Super!').prop('disabled', true);
-                $('#thanks').fadeIn(1000, function(){
-                    window.setTimeout(function(){
-                        $('#thanks').fadeOut(1000);
-                    }, 3000);
+                $('#thanks').fadeIn(1000);
+                $('#cmdShare').click(function(){
+                    console.log('asdsf');
+                    FB.ui({
+                        method: 'share',
+                        href: 'http://getwaeo.com/',
+                    }, function(response){
+                        console.log(response);
+                    });
                 });
             });
         });
@@ -62,5 +86,7 @@
     ga('create', 'UA-57910741-2', 'auto');
     ga('send', 'pageview');
 
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 </script>
 </html>
