@@ -37,11 +37,13 @@
 <script type="text/javascript">
     (function() {
         $('#cmdSubscribe').click(function(){
+            if($('#txtEmail').val() == null || $('#txtEmail').val() == '') return;
             $.ajax({
                 url:'https://api.waeoapp.com/core/subscribe/' + $('#txtEmail').val() + "/",
             }).done(function(response){
                 console.log(response);
-                $('#txtEmail').val('');
+                $('#txtEmail').val('').prop('disabled', true);
+                $('#cmdSubscribe').html('Super!').prop('disabled', true);
                 $('#thanks').fadeIn(1000, function(){
                     window.setTimeout(function(){
                         $('#thanks').fadeOut(1000);
@@ -49,22 +51,6 @@
                 });
             });
         });
-        /*
-        images = ['images/disc1.jpg', 'images/iphone.jpg', 'images/head1.jpg'];
-        var i = 0;
-        window.setInterval(function(){
-            if(i==3) i=0;
-            console.log(i);
-            //$('#container').css({'background-image':'url(\'' + images[i] + '\')'});
-            $('#container')
-                .animate({opacity: 0.6}, 1500, function() {
-                    $(this)
-                        //.css({'background-image':'url(\'' + images[i] + '\')'})
-                        .animate({opacity: 1}, 1500);
-                    i++;
-            });
-        }, 4000);
-        */
     })();
 </script>
 <script>
