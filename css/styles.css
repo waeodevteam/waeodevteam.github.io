@@ -145,10 +145,11 @@ html, body{
 }
 
 #cmdShare{
-    color:  #425F9C;
+    /*color:  #425F9C;*/
     cursor: pointer;
 }
 
 #cmdTweet{
     /*color: #0082B2;*/
+    cursor: pointer;
 }
