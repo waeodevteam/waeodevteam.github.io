@@ -56,7 +56,7 @@
         $('#cmdSubscribe').click(function(){
             if($('#txtEmail').val() == null || $('#txtEmail').val() == '') return;
             $.ajax({
-                url:'https://api.waeoapp.com/core/subscribe/' + $('#txtEmail').val() + "/",
+                url:'http://api.waeoapp.com/core/subscribe/' + $('#txtEmail').val() + "/",
             }).done(function(response){
                 console.log(response);
                 if(response == 'You are already there!')
