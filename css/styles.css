@@ -157,9 +157,9 @@ html, body{
 .footer, .push{
     margin:0 auto;
     /*text-align: center;*/
-    width = 70px
+    width: 50%;
     position: absolute;
-    margin-left:300px;
+    /*margin-left:300px;*/
     bottom: 0px;
 }
 
