@@ -155,10 +155,11 @@ html, body{
 }
 
 .footer, .push{
-    margin:0 auto;
-    text-align: center;
-    height: 70px;
-    position: absolute;
+    /*margin:0 auto;*/
+    /*text-align: center;*/
+    height: 4em;
+    position: center;
+    
     bottom: 0px;
 }
 
