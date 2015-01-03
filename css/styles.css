@@ -154,10 +154,10 @@ html, body{
     line-height: 12px;
 }
 
-.footer{
+.footer, .push{
     margin:0 auto;
     /*text-align: center;*/
-    position: center;
+    position: absolute;
     margin-left:10px;
     bottom: 0px;
 }
