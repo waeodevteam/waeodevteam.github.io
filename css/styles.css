@@ -65,15 +65,6 @@ html, body{
     margin-left:10px;
 }
 
-#blog-link{
-    font-family: Roboto Regular;
-    font-size: 17px;
-    position: absolute;
-    right:50px;
-    top:60px;
-    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
-    text-transform: capitalize;
-}
 
 .bold-text{
     font-family: Roboto Bold, Helvetica Neue;
@@ -152,4 +143,25 @@ html, body{
 #cmdTweet{
     /*color: #0082B2;*/
     cursor: pointer;
+}
+
+#footer{
+    font-size:13px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background-color: #111111;
+    padding: 10px;
+    color: white;
+    font-family: Roboto Regular;
+}
+
+#blog-link{
+    font-family: Roboto Regular;
+    position: absolute;
+    left:20px;
+    top:30px;
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+    text-transform: capitalize;
 }
