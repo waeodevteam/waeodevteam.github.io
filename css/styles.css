@@ -108,7 +108,6 @@ html, body{
     font-style:normal;
     font-variant: normal;
     line-height: 12px;
-    text-shadow: rgb(0, 0, 0) 1px 1px 5px;
 }
 
 #center-panel{
@@ -158,7 +157,7 @@ html, body{
 #footer{
     width: 100%;
     height: 70px;
-    position: absolute;
+    position: center;
     bottom: 0px;
 }
 
