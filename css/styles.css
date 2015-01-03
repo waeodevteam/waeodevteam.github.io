@@ -144,6 +144,16 @@ html, body{
     font-weight: bold;
 }
 
+#footer{
+    font-family: Meta Bold;
+    margin-top: 100px;
+    font-size: 20px;
+    color:white;
+    display: none;
+    /*text-shadow: rgb(0, 0, 0) 1px 1px 3px;*/
+    font-weight: bold;
+}
+
 #cmdShare{
     /*color:  #425F9C;*/
     cursor: pointer;
