@@ -135,6 +135,25 @@ html, body{
     font-weight: bold;
 }
 
+.footer-text{
+    font-family: Roboto Bold;
+    font-size: 10px;
+    color:white;
+    font-stretch: normal;
+    font-style:normal;
+    font-variant: normal;
+    line-height: 12px;
+}
+
+#footer{
+    margin:0 auto;
+    /*text-align: center;*/
+    width: 50%;
+    position: absolute;
+    /*margin-left:300px;*/
+    bottom: 0px;
+}
+
 #cmdShare{
     /*color:  #425F9C;*/
     cursor: pointer;
