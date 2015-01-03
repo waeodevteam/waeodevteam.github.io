@@ -188,7 +188,7 @@ html, body{
 #legal-link{
     font-family: Roboto Regular;
     position: absolute;
-    left:50px;
+    left:120px;
     top:30px;
     text-shadow: rgb(0, 0, 0) 1px 1px 1px;
     text-transform: capitalize;
