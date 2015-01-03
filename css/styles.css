@@ -155,8 +155,8 @@ html, body{
 }
 
 .footer, .push{
-    margin-top: -100px;
-    width: 100%;
+    margin:0 auto;
+    text-align: center;
     height: 70px;
     position: absolute;
     bottom: 0px;
