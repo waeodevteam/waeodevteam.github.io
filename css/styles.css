@@ -164,7 +164,7 @@ html, body{
     cursor: pointer;
 }
 
-#footer{
+#footer ul{
     font-size:13px;
     width: 100%;
     position: absolute;
@@ -174,7 +174,11 @@ html, body{
     padding: 10px;
     color: white;
     font-family: Roboto Regular;
+    list-style-type: none;
+    text-align: center;
 }
+
+#footer ul li { display: inline; }
 
 #blog-link{
     font-family: Roboto Regular;
