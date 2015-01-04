@@ -187,20 +187,32 @@ html, body{
     color: #fff;
 }
 
-#footer p{
+#footer #copyright{
     font-size:13px;
     width: 100%;
     position: absolute;
-    bottom: 0;
-    height: 30px;
-    background-color: #111111;
+    bottom: 5px;
     padding: 10px;
     color: white;
     font-family: Roboto Regular;
     list-style-type: none;
-    opacity: 0.7;
-    /*text-align: center;*/
+    opacity: 0.8;
 }
+
+/*#footer p{*/
+/*    font-size:13px;*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    height: 30px;*/
+/*    background-color: #111111;*/
+/*    padding: 10px;*/
+/*    color: white;*/
+/*    font-family: Roboto Regular;*/
+/*    list-style-type: none;*/
+/*    opacity: 0.7;*/
+    /*text-align: center;*/
+/*}*/
 
 #social-icons{
     position: absolute;
