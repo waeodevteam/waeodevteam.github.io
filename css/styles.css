@@ -180,6 +180,13 @@ html, body{
 
 #footer ul li { display: inline; }
 
+#footer ul li a{
+    text-decoration: none;
+    padding: .2em 1em;
+    color: #fff;
+    /*background-color: #036;*/
+}
+
 #blog-link{
     font-family: Roboto Regular;
     position: absolute;
