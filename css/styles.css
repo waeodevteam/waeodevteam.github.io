@@ -229,9 +229,13 @@ html, body{
     color: white;
     font-family: Roboto Regular;
     list-style-type: none;
-    opacity: 0.6;
 }
 
 #social-icons li{
-    margin-left: 5px;
+    margin-left: 10px;
+    opacity: 0.6;
+}
+
+#social-icons li:hover{
+    opacity: 1;
 }
