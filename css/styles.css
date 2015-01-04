@@ -175,20 +175,18 @@ html, body{
     color: white;
     font-family: Roboto Regular;
     list-style-type: none;
-    opacity: 0.7;
+    opacity: 0.9;
     /*text-align: center;*/
 }
 
 #footer ul li { display: inline; }
 
 #footer ul li a{
-    position: absolute;
-    top: 25px;
+    /*position: absolute;*/
+    /*top: 25px;*/
     text-decoration: none;
     padding: .2em 1em;
     color: #fff;
-    /*position: absolute;*/
-    /*top: 18px;*/
     /*background-color: #036;*/
 }
 
