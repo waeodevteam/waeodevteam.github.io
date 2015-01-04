@@ -191,6 +191,7 @@ html, body{
 }
 
 #footer p{
+    font-size:13px
     width: 100%;
     position: absolute;
     bottom: 0;
