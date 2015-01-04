@@ -169,13 +169,13 @@ html, body{
     width: 100%;
     position: absolute;
     bottom: 0;
-    height: 50px;
+    height: 40px;
     background-color: #111111;
     padding: 10px;
     color: white;
     font-family: Roboto Regular;
     list-style-type: none;
-    opacity: 0.9;
+    opacity: 0.8;
     /*text-align: center;*/
 }
 
