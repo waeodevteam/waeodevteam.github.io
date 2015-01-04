@@ -204,24 +204,6 @@ html, body{
     /*text-align: center;*/
 }
 
-#blog-link{
-    font-family: Roboto Regular;
-    position: absolute;
-    left:20px;
-    top:30px;
-    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
-    text-transform: capitalize;
-}
-
-#legal-link{
-    font-family: Roboto Regular;
-    position: absolute;
-    left: 80px;
-    top: 30px;
-    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
-    text-transform: capitalize;
-}
-
 #social-icons{
     position: absolute;
     right: 20px;
