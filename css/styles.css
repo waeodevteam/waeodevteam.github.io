@@ -170,7 +170,7 @@ html, body{
     position: absolute;
     bottom: 0;
     height: 50px;
-    background-color: #111110;
+    background-color: #111000;
     padding: 10px;
     color: white;
     font-family: Roboto Regular;
@@ -184,6 +184,8 @@ html, body{
     text-decoration: none;
     padding: .2em 1em;
     color: #fff;
+    position: absolute;
+    top: 18px;
     /*background-color: #036;*/
 }
 
