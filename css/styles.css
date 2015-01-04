@@ -187,17 +187,17 @@ html, body{
     color: #fff;
 }
 
-#footer #copyright{
-    font-size:13px;
-    width: 100%;
-    position: absolute;
-    bottom: 5px;
-    padding: 10px;
-    color: white;
-    font-family: Roboto Regular;
-    list-style-type: none;
-    opacity: 0.8;
-}
+/*#footer #copyright{*/
+/*    font-size:13px;*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    bottom: 5px;*/
+/*    padding: 10px;*/
+/*    color: white;*/
+/*    font-family: Roboto Regular;*/
+/*    list-style-type: none;*/
+/*    opacity: 0.8;*/
+/*}*/
 
 /*#footer p{*/
 /*    font-size:13px;*/
