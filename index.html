@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta property="og:url" content="http://getwaeo.com" />
+    <meta property="og:url" content="https://getwaeo.com" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Waeo" />
-    <meta property="og:image" content="http://getwaeo.com/images/logo-og.png" />
+    <meta property="og:image" content="https://getwaeo.com/images/logo-og.png" />
     <meta property="og:description" content="Playlists ffaor the connected generation." />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@waeoHQ" />
+    <meta name="twitter:site" content="@WaeoHQ" />
     <meta name="twitter:title" content="Playlists for the connected generation." />
     <meta name="twitter:description" content="Get early access to Waeo by subscribing on the website." />
-    <meta name="twitter:image" content="http://getwaeo.com/images/logo-og.png" />
+    <meta name="twitter:image" content="https://getwaeo.com/images/logo-og.png" />
     <meta name="twitter:url" content="https://getwaeo.com/" />
     <meta charset="UTF-8">
     <meta name="keywords" content="waeo, playlist, music, youtube, soundcloud, spotify" />
@@ -46,7 +46,7 @@
             <div id="submit">
                 <input type="email" id="txtEmail" placeholder="Email" />&nbsp;<button id="cmdSubscribe">Get Early Access</button>
             </div>
-            <p id="thanks">Thanks! We'll get you aboard once we are ready.<br/>You can help us by sharing it forward on <span id="cmdShare"><u>Facebook</u></span> or <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getwaeo.com" data-text="Playlists for the connected generation." data-via="WaeoHQ" data-count="none" data-hashtags="music" data-dnt="true">Twitter</a></p>
+            <p id="thanks">Thanks! We'll get you aboard once we are ready.<br/>You can help us by sharing it forward on <span id="cmdShare"><u>Facebook</u></span> or <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://getwaeo.com" data-text="Playlists for the connected generation." data-via="WaeoHQ" data-count="none" data-hashtags="music" data-dnt="true">Twitter</a></p>
         </div>
         <div id="footer">
             <div style="margin-top: 10px;">All rights reserved. Waeo &copy; 2015</div>
@@ -60,9 +60,6 @@
                 <li><a target="_blank" href="https://www.twitter.com/WaeoHQ"><img src="images/twitter32.png" /></a></li>
                 <li><a target="_blank" href="http://blog.getwaeo.com/"><img src="images/tumblr32.png" /></a></li>
             </ul>
-            <!--</div>-->
-            <!--<div id="blog-link"><a style="color:white;text-decoration: none;" target="_blank" href="http://blog.getwaeo.com/">BLOG</a></div>-->
-            <!--<div id="legal-link"><a style="color:white;text-decoration: none;" target="_blank">LEGAL</a></div>-->
         </div>
     </div>
 </body>
@@ -71,7 +68,7 @@
         $('#cmdSubscribe').click(function(){
             if($('#txtEmail').val() == null || $('#txtEmail').val() == '') return;
             $.ajax({
-                url:'//api.waeoapp.com/core/subscribe/' + $('#txtEmail').val() + "/",
+                url:'https://api.waeoapp.com/core/subscribe/' + $('#txtEmail').val() + "/",
             }).done(function(response){
                 console.log(response);
                 if(response == 'You are already there!')
@@ -111,7 +108,4 @@
 </script>
     // Twitter's script
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-
-
 </html>
