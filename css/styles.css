@@ -33,28 +33,28 @@ html, body{
 
 @font-face {
     font-family: Roboto Bold;
-    src: url('https://d2yn1supmf9w2o.cloudfront.net/Roboto-Bold.ttf');
+    src: url('../fonts/Roboto-Bold.ttf');
 }
 
 @font-face {
     font-family: "Helvetica Neue";
-    src:url("https://d2yn1supmf9w2o.cloudfront.net/Helvetica-Neue.ttf");
+    src:url("../fonts/Helvetica-Neue.ttf");
 }
 
 
 @font-face {
     font-family: "Meta Bold";
-    src:url("https://d2yn1supmf9w2o.cloudfront.net/Meta-Bold.ttf");
+    src:url("../fonts/Meta-Bold.ttf");
 }
 
 @font-face {
     font-family: "Lato Regular";
-    src:url("https://d2yn1supmf9w2o.cloudfront.net/Lato-Regular.ttf");
+    src:url("../fonts/Lato-Regular.ttf");
 }
 
 @font-face {
     font-family: "Roboto Regular";
-    src:url("https://d2yn1supmf9w2o.cloudfront.net/Roboto-Regular.ttf");
+    src:url("../fonts/Roboto-Regular.ttf");
 }
 
 #header-title{
